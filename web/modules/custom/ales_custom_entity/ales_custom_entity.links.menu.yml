@@ -1,0 +1,9 @@
+entity.review.collection:
+  title: 'Reviews'
+  route_name: entity.review.collection
+  parent: system.admin_content
+
+entity.review_type.collection:
+  title: 'Review types'
+  route_name: entity.review_type.collection
+  parent: system.admin_structure

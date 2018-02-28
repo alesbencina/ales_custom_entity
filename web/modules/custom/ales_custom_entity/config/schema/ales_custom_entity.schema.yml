@@ -1,0 +1,10 @@
+ales_custom_entity.review_type.*:
+  type: config_entity
+  label: 'Review type'
+  mapping:
+    id:
+      type: string
+      label: 'ID'
+    label:
+      type: label
+      label: 'Label'

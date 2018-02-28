@@ -1,0 +1,14 @@
+entity.review.collection:
+  title: 'Reviews'
+  route_name: entity.review.collection
+  base_route: system.admin_content
+
+entity.review_type.edit_form:
+  title: 'Edit'
+  route_name: entity.review_type.edit_form
+  base_route: entity.review_type.edit_form
+
+entity.review_type.delete_form:
+  title: 'Delete'
+  route_name: entity.review_type.delete_form
+  base_route: entity.review_type.edit_form

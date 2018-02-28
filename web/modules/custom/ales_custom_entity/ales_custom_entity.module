@@ -1,0 +1,44 @@
+<?php
+
+/**
+ * @file
+ * Contains ales_custom_entity.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+use Drupal\Core\Form\FormStateInterface;
+use Drupal\block\Entity\Block;
+use Drupal\Core\Entity\EntityInterface;
+use Drupal\Core\Cache\Cache;
+
+/**
+ * Implements hook_help().
+ */
+function ales_custom_entity_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the ales_custom_entity module.
+    case 'help.page.ales_custom_entity':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('My Awesome Module') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function ales_custom_entity_theme() {
+  return [
+    'ales_custom_entity' => [
+      'render element' => 'content',
+    ],
+  ];
+}
+
+function ales_custom_entity_review_delete(EntityInterface $entity) {
+  $nid = $entity->get('nid')->target_id;
+  Cache::invalidateTags(['node:' . $nid]);
+}

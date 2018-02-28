@@ -1,0 +1,17 @@
+administer reviews:
+  title: 'Administer reviews'
+
+create events:
+  title: 'Create reviews'
+
+delete events:
+  title: 'Delete reviews'
+
+edit events:
+  title: 'Edit reviews'
+
+view events:
+  title: 'View reviews'
+
+administer review types:
+  title: 'Administer review types'

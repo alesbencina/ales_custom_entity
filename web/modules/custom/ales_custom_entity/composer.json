@@ -1,0 +1,14 @@
+{
+  "name": "drupal/ales_custom_entity",
+  "type": "drupal-module",
+  "description": "My Awesome Module",
+  "keywords": ["Drupal"],
+  "license": "GPL-2.0+",
+  "homepage": "https://www.drupal.org/project/ales_custom_entity",
+  "minimum-stability": "dev",
+  "support": {
+    "issues": "https://www.drupal.org/project/issues/ales_custom_entity",
+    "source": "http://cgit.drupalcode.org/ales_custom_entity"
+  },
+  "require": { }
+}

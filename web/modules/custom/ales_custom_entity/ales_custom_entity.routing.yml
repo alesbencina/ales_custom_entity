@@ -1,0 +1,6 @@
+ales_custom_entity.recommendation.add_recommendation:
+  path: 'recommendation/add/{node_id}/{review_type}'
+  defaults:
+    _controller: '\Drupal\ales_custom_entity\Controller\RecommendationController::getReviewForm'
+  requirements:
+    _permission: 'access content'

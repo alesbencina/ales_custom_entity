@@ -1,0 +1,5 @@
+services:
+  ales_custom_entity.review_service:
+    class: Drupal\ales_custom_entity\RecommendationService
+  ales_custom_entity.lazy_loaded:
+    class: Drupal\ales_custom_entity\Controller\LazyLoaderController
